@@ -1,10 +1,13 @@
 namespace BeziqueCardGame;
 
-public class BeziqueConcrete : IBeziqueAdapter
+public class BeziqueBody : IBeziqueAdapter
 {
+    public const int TotalCard = 132;
+    public int dealCardCount = TotalCard;
+    
     public void DealThreeCards()
     {
-        throw new NotImplementedException();
+        dealCardCount -= 3;
     }
 
     public void Add10PointsToDealer()

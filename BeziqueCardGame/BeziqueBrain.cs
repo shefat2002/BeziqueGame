@@ -6,7 +6,7 @@
 namespace BeziqueCardGame;
 
 // Generated state machine
-public partial class Bezique
+public partial class BeziqueBrain
 {
     public enum EventId
     {
@@ -76,7 +76,7 @@ public partial class Bezique
     public StateId stateId;
 
     // State machine constructor. Must be called before start or dispatch event functions. Not thread safe.
-    public Bezique()
+    public BeziqueBrain()
     {
     }
 

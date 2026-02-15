@@ -1,10 +1,10 @@
 namespace BeziqueCardGame;
 
-public partial class Bezique
+public partial class BeziqueBrain
 {
     internal IBeziqueAdapter _adapter;
 
-    Bezique(IBeziqueAdapter adapter)
+    public BeziqueBrain(IBeziqueAdapter adapter)
     {
         _adapter = adapter;
     }
