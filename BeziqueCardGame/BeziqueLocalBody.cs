@@ -1,13 +1,25 @@
 namespace BeziqueCardGame;
 
-public class BeziqueBody : IBeziqueAdapter
+public class BeziqueLocalBody : IBeziqueAdapter
 {
     public const int TotalCard = 132;
-    public int dealCardCount = TotalCard;
-    
+    public Dealer Dealer;
+    public Player[] Players;
+    public int dealCardCount;
+
+    public BeziqueLocalBody()
+    {
+        
+    }
+
+    public BeziqueLocalBody(int playerCount)
+    {
+        
+    }
+
     public void DealThreeCards()
     {
-        dealCardCount -= 3;
+        
     }
 
     public void Add10PointsToDealer()
